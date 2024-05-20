@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="rss-input" value="https://pc-games.eu.org/" />
+    <button id="rss-button" onclick="search()">Search</button>
+
+    <div class="rss-feed-url_content">
+      <div id="feeds">
+        <div class="loader"></div>
+      </div>
+    </div>
+
+    <div id="rss-feed-url_response"></div>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/rss.js"></script>
+
+    <script>
+      // function search() {
+      //   findRssFeeds(document.getElementById("rss-input").value);
+      // }
+
+      // async function fetchDataAndUpdate() {
+      //   try {
+      //     const response = await fetch("https://pc-games.eu.org/");
+      //     const data = await response.json(); // Assuming the response is in JSON format
+      //     // Update the frontend with the fetched data
+      //     updateFrontend(data);
+      //   } catch (error) {
+      //     // Handle any errors during the fetch process
+      //     console.error("Error fetching data:", error);
+      //   }
+      // }
+
+      // // Function to update the frontend with the fetched data
+      // function updateFrontend(data) {
+      //   console.log(data);
+      //   // Example: Update a specific element with the fetched data
+      //   // const elementToUpdate = document.getElementById("data-display");
+      //   // elementToUpdate.textContent = data; // Assuming 'data' is the fetched content to display
+      // }
+
+      // // Periodically fetch and update data (e.g., every 5 seconds)
+      // setInterval(fetchDataAndUpdate, 500);
+    </script>
+  </body>
+</html>
